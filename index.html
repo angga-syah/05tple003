@@ -5,25 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/id/6/62/UNPAM_logo1.png">
   <title>05TPLE003 - Pemrograman Web I</title>
-  <style>
+ <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
       background-color: #f9f9f9;
     }
 
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
     .container {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .table-container {
-      flex: 1;
+      flex: 1 1 100%;
+      max-width: 600px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       padding: 20px;
+      overflow-x: auto;
     }
 
     h2 {
@@ -35,6 +43,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 480px;
     }
 
     th, td {
@@ -60,11 +69,26 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 768px) {
+      .table-container {
+        max-width: 100%;
+        padding: 15px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <h1 style="text-align: center;">Pemrograman Web I</h1>
-  <h1 style="text-align: center;">Daftar Mahasiswa Kelas CS 05TPLE003</h1>
+  <h1 style="text-align: center;">Daftar Nama Mahasiswa Kelas CS 05TPLE003</h1>
   <div class="container">
     <!-- Tabel 1 -->
     <div class="table-container">

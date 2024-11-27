@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.table-container {
+  flex: 1 1 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merge borders for neat lines */
+  min-width: 480px;
+  border: 1px solid #000; /* Outer border for the table */
+  table-layout: fixed; /* Enforce fixed layout for consistent column widths */
+}
+
+th, td {
+  text-align: left;
+  padding: 12px; /* Adjust padding for spacing */
+  border: 1px solid #000; /* Add borders around cells */
+}
+
+th:nth-child(1), td:nth-child(1) {
+  text-align: center;
+  width: 5px; /* Narrower width for 'No' column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 120px; /* Width for 'Nama' column */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 150px; /* Width for 'Link' column */
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+thead th {
+  text-align: center; /* Meratakan header kolom */
+  background-color: #007bff;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Link Styles */
+a {
+  color: #0257b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6f42c1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .table-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px; /* Smaller font size for smaller devices */
+  }
+
+  th, td {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  .table-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 10px; /* Compact font for very small devices */
+    min-width: 300px; /* Allow smaller table width */
+  }
+
+  th, td {
+    padding: 8px; /* Further reduce padding */
+  }
+
+  th {
+    font-size: 13px; /* Adjust heading size */
+  }
+}

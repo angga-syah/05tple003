@@ -37,29 +37,29 @@ h2 {
 /* Table Styles */
 table {
   width: 100%;
-  border-collapse: collapse; /* Merge borders for neat lines */
+  border-collapse: collapse;
   min-width: 480px;
-  border: 1px solid #000; /* Outer border for the table */
-  table-layout: fixed; /* Enforce fixed layout for consistent column widths */
+  border: 1px solid #000; 
+  table-layout: fixed;
 }
 
 th, td {
   text-align: left;
-  padding: 12px; /* Adjust padding for spacing */
-  border: 1px solid #000; /* Add borders around cells */
+  padding: 12px; 
+  border: 1px solid #000;
 }
 
 th:nth-child(1), td:nth-child(1) {
   text-align: center;
-  width: 5px; /* Narrower width for 'No' column */
+  width: 10px;
 }
 
 th:nth-child(2), td:nth-child(2) {
-  width: 120px; /* Width for 'Nama' column */
+  width: 120px;
 }
 
 th:nth-child(3), td:nth-child(3) {
-  width: 150px; /* Width for 'Link' column */
+  width: 150px; 
 }
 
 th {
@@ -68,13 +68,13 @@ th {
 }
 
 thead th {
-  text-align: center; /* Meratakan header kolom */
+  text-align: center; 
   background-color: #007bff;
   color: white;
 }
 
 tr:hover {
-  background-color: #f1f1f1; /* Highlight row on hover */
+  background-color: #f1f1f1;
 }
 
 /* Link Styles */
@@ -99,11 +99,11 @@ a:visited {
   }
 
   table {
-    font-size: 14px; /* Smaller font size for smaller devices */
+    font-size: 14px;
   }
 
   th, td {
-    padding: 10px; /* Reduce padding on smaller screens */
+    padding: 10px; 
   }
 }
 
@@ -118,15 +118,15 @@ a:visited {
   }
 
   table {
-    font-size: 10px; /* Compact font for very small devices */
-    min-width: 300px; /* Allow smaller table width */
+    font-size: 10px;
+    min-width: 300px; 
   }
 
   th, td {
-    padding: 8px; /* Further reduce padding */
+    padding: 8px;
   }
 
   th {
-    font-size: 13px; /* Adjust heading size */
+    font-size: 13px; 
   }
 }

@@ -55,11 +55,11 @@ th:nth-child(1), td:nth-child(1) {
 }
 
 th:nth-child(2), td:nth-child(2) {
-  width: 120px;
+  width: 100px;
 }
 
 th:nth-child(3), td:nth-child(3) {
-  width: 150px; 
+  width: 100px; 
 }
 
 th {
